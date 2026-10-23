@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TOWER FALL</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="start" class="screen on">
+  <div id="ttl"></div>
+  <p>Tire a peça. Não derrube tudo.</p>
+  <div class="row"><input id="pname" maxlength="12" placeholder="Seu nome" value="Jogador"><select id="pn"><option value="2">2 jogadores</option><option value="3">3 jogadores</option><option value="4" selected>4 jogadores</option></select><select id="pm"><option value="c">Clássico</option><option value="d">Desafio</option><option value="v">Velocidade</option></select></div>
+  <div class="row"><button class="btn" id="bplay">JOGAR</button><button class="btn alt" id="bdemo">DEMO</button><button class="btn alt" id="bhow">COMO JOGAR</button></div>
+</section>
+
+<section id="game" class="screen">
+  <div class="top"><h3>TOWER FALL</h3><span id="rnd"></span><span id="sc" class="row"></span><button class="btn alt" id="bquit" style="padding:4px 14px;font-size:14px">Sair</button></div>
+  <div class="main">
+    <div id="stage"><div class="tbl"></div><div id="wob" class="wob"><div id="tw" class="tw"></div></div></div>
+    <div id="side"></div>
+  </div>
+</section>
+<div id="modal"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
